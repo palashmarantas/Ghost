@@ -1,0 +1,7 @@
+require:
+  - test/utils/overrides.js
+exit: true
+trace-warnings: true
+recursive: true
+extension: test.js
+timeout: '60000'
