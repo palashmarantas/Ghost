@@ -3,23 +3,22 @@ framework: mocha
 preRun:
      command:
         - yarn install
-        - yarn build --force
 preMerge:
   pattern:
     - "./test/unit"
-    - "./test/integration"
-    - "./test/e2e-api"
-    - "./test/e2e-frontend"
-    - "./test/e2e-server"
-    - "./test/regression"
+#     - "./test/integration"
+#     - "./test/e2e-api"
+#     - "./test/e2e-frontend"
+#     - "./test/e2e-server"
+#     - "./test/regression"
 postMerge:
   pattern:
     - "./test/unit"
-    - "./test/integration"
-    - "./test/e2e-api"
-    - "./test/e2e-frontend"
-    - "./test/e2e-server"
-    - "./test/regression"
+#     - "./test/integration"
+#     - "./test/e2e-api"
+#     - "./test/e2e-frontend"
+#     - "./test/e2e-server"
+#     - "./test/regression"
 postRun:
      command:
         - yarn --version
