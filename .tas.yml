@@ -5,20 +5,10 @@ preRun:
         - yarn install
 preMerge:
   pattern:
-    - "./test/unit/**/*.test.js"
-#     - "./test/integration"
-#     - "./test/e2e-api"
-#     - "./test/e2e-frontend"
-#     - "./test/e2e-server"
-#     - "./test/regression"
+    - "./test/**/*.test.js"
 postMerge:
   pattern:
-    - "./test/unit"
-#     - "./test/integration"
-#     - "./test/e2e-api"
-#     - "./test/e2e-frontend"
-#     - "./test/e2e-server"
-#     - "./test/regression"
+    - "./test/**/*.test.js"
 postRun:
      command:
         - yarn --version
